@@ -18,5 +18,34 @@ int main() {
         printf("0. Sair\n");
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
+
+        switch (opcao) {
+            case 1:
+                Novo_Cliente();
+                break;
+            case 2:
+                Apagar_Cliente();
+                break;
+            case 3:
+                Lista_De_Clientes();
+                break;
+            case 4:
+                Funcao_Debito();
+                break;
+            case 5:
+                Funcao_Deposito();
+                break;
+            case 6:
+                Extrato_Clientes();
+                break;
+            case 7:
+                Transferencia_entre_Contas();
+                break;
+            case 0:
+                printf("Voce saiu. Ate a proxima.\n");
+                break;
+            default:
+                printf("Opcao invalida,\n por favor tente novamente.\n");
+        }
     } while (opcao != 0);
 }
