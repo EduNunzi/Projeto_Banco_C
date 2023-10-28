@@ -10,4 +10,12 @@ typedef struct {
     char senha[7];
 } Cliente;
 
+typedef struct {
+    char cpf_origem[12];
+    char cpf_destino[12];
+    char cpf_deposito[12];
+    char cpf_debito[12];
+    float valor;
+} Transacao;
+
 #endif //PROJETO_BANCO_C_BIBLIOTECA_H
