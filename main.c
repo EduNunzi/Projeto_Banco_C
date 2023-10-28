@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include "biblioteca.h"
 
+//Eduardo Guerra Nunziata RA: 22.123.002-2
+//Ana Carolina Lazzuri RA: 22.123.001-4
+
 int main() {
     int opcao;
     Iniciar_Banco();
