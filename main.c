@@ -3,6 +3,7 @@
 
 int main() {
     int opcao;
+    Iniciar_Banco();
 
 
     do {
@@ -48,4 +49,6 @@ int main() {
                 printf("Opcao invalida,\n por favor tente novamente.\n");
         }
     } while (opcao != 0);
+
+    Salvamento_Automatico();
 }
