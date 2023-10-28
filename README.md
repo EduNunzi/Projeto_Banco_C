@@ -1,2 +1,2 @@
 # Projeto_Banco_C
-Projeto em C, criação de um banco chamado "Quem Poupa Tem"
+O projeto tem como propósito desenvolver um sistema bancário para o recém-lançado banco QuemPoupaTem. Nesse sistema, serão oferecidos dois tipos de contas: comum e plus, cada uma com diferentes taxas de débito e limites de saldo negativo. Serão implementadas as seguintes operações: criar, apagar e listar clientes; realizar débitos, depósitos, extratos e transferências entre contas. Para segurança, todas as operações deverão ser validadas por CPF e senha do cliente. Os dados dos clientes e das operações serão armazenados de forma permanente em arquivos binários. O desenvolvimento do sistema ocorrerá em linguagem C e ele funcionará em um loop infinito até que o usuário decida sair.
