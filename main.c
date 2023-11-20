@@ -6,7 +6,12 @@
 
 int main() {
     int opcao;
-    Iniciar_Banco();
+    Cliente clientes[1000];
+    Transacao transacoes[1000];
+    int numClientes = 0;
+    int numTransacoes = 0;
+
+    Iniciar_Banco(clientes, &numClientes, transacoes, &numTransacoes);
 
 
     do {
@@ -25,25 +30,25 @@ int main() {
 
         switch (opcao) {
             case 1:
-                Novo_Cliente();
+                Novo_Cliente(clientes, &numClientes);
                 break;
             case 2:
-                Apagar_Cliente();
+                Apagar_Cliente(clientes, &numClientes);
                 break;
             case 3:
-                Lista_De_Clientes();
+                Lista_De_Clientes(clientes, numClientes);
                 break;
             case 4:
-                Funcao_Debito();
+                Funcao_Debito(clientes, numClientes, transacoes, &numTransacoes);
                 break;
             case 5:
-                Funcao_Deposito();
+                Funcao_Deposito(clientes, numClientes, transacoes, &numTransacoes);
                 break;
             case 6:
-                Extrato_Clientes();
+                Extrato_Clientes(clientes, numClientes, transacoes, numTransacoes);
                 break;
             case 7:
-                Transferencia_entre_Contas();
+                Transferencia_entre_Contas(clientes, numClientes, transacoes, &numTransacoes);
                 break;
             case 0:
                 printf("Voce saiu. Ate a proxima.\n");
@@ -53,5 +58,7 @@ int main() {
         }
     } while (opcao != 0);
 
-    Salvamento_Automatico();
+    Salvamento_Automatico(clientes, numClientes, transacoes, numTransacoes);
+
+    return 0;
 }
