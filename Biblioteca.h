@@ -18,4 +18,14 @@ typedef struct {
     float valor;
 } Transacao;
 
+void Iniciar_Banco();
+void Salvamento_Automatico();
+void Novo_Cliente();
+void Apagar_Cliente();
+void Lista_De_Clientes();
+void Funcao_Debito();
+void Funcao_Deposito();
+void Extrato_Clientes();
+void Transferencia_entre_Contas();
+
 #endif //PROJETO_BANCO_C_BIBLIOTECA_H
